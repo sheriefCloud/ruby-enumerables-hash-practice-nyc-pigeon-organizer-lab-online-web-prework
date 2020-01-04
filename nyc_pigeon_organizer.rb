@@ -1,27 +1,14 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
 
   pigeon_list = {}
   p_names = []
 
-  c1 = 0
-  while c1 < data.size
-    category = data[c1]
-    c2 = 0
-    while c2 < category.size
-      sub_cat = category[c2]
-      c3 = 0
-      while c3 < sub_cat.size
-        p_names << sub_cat[c3]
-
-        c3 += 1
-      end
-      c2 +=1
-    end
-    c1 +=1
-
-
-  end
-
+  new_keys = []
+  data.each_key {|key| new_keys << key}
+binding.pry
+  
 
 
 
