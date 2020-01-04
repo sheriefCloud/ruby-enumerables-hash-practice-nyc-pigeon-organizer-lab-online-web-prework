@@ -7,12 +7,23 @@ def nyc_pigeon_organizer(data)
 
   new_keys = []
   data.each_key {|key| new_keys << key}
+  color_keys = []
+  gender_keys = []
+  lives_keys = []
+  i = 0
+  while i< new_keys.length 
+    data[new_keys].each_key |key| do
+      if data[new_keys] == :color
+        color_keys << key
+      elsif data[new_keys] == :gender
+        gender_keys << key
+      else 
+        lives_keys << key
+      end
+    end  
+    i += 1
+  end
 binding.pry
-
-
-
-
-
 
   pigeon_list
 end
