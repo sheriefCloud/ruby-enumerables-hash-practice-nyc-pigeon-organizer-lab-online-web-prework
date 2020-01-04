@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
   new_keys = []
   data.each_key {|key| new_keys << key}
 binding.pry
-  
+
 
 
 
